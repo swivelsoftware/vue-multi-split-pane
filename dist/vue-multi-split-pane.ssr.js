@@ -7,14 +7,17 @@ function _arrayWithHoles(arr) {
 }
 
 function _iterableToArrayLimit(arr, i) {
-  if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return;
+  var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"];
+
+  if (_i == null) return;
   var _arr = [];
   var _n = true;
   var _d = false;
-  var _e = undefined;
+
+  var _s, _e;
 
   try {
-    for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) {
+    for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) {
       _arr.push(_s.value);
 
       if (i && _arr.length === i) break;
@@ -62,7 +65,7 @@ function _nonIterableRest() {
 //
 //
 //
-var script = {
+var script$1 = {
   name: 'MultiSplitPane',
   props: {
     height: {
@@ -358,7 +361,7 @@ var script = {
     return (id, style) => addStyle(id, style, context);
 }
 function addStyle(id, css, context) {
-    const group =  css.media || 'default' ;
+    const group = css.media || 'default' ;
     const style = context._styles[group] || (context._styles[group] = { ids: [], css: '' });
     if (!style.ids.includes(id)) {
         style.media = css.media;
@@ -382,10 +385,10 @@ function renderStyles(styles) {
     }
     return css;
 }/* script */
-var __vue_script__ = script;
+var __vue_script__$1 = script$1;
 /* template */
 
-var __vue_render__ = function __vue_render__() {
+var __vue_render__$1 = function __vue_render__() {
   var _vm = this;
 
   var _h = _vm.$createElement;
@@ -408,13 +411,13 @@ var __vue_render__ = function __vue_render__() {
   }, [_vm._t("default")], 2);
 };
 
-var __vue_staticRenderFns__ = [];
+var __vue_staticRenderFns__$1 = [];
 /* style */
 
-var __vue_inject_styles__ = function __vue_inject_styles__(inject) {
+var __vue_inject_styles__$1 = function __vue_inject_styles__(inject) {
   if (!inject) return;
-  inject("data-v-d31868b8_0", {
-    source: "*[data-v-d31868b8]{box-sizing:border-box}[data-resizable][data-v-d31868b8]{overflow:auto;width:100%}",
+  inject("data-v-04666209_0", {
+    source: "*[data-v-04666209]{box-sizing:border-box}[data-resizable][data-v-04666209]{overflow:auto;width:100%}",
     map: undefined,
     media: undefined
   });
@@ -422,19 +425,19 @@ var __vue_inject_styles__ = function __vue_inject_styles__(inject) {
 /* scoped */
 
 
-var __vue_scope_id__ = "data-v-d31868b8";
+var __vue_scope_id__$1 = "data-v-04666209";
 /* module identifier */
 
-var __vue_module_identifier__ = "data-v-d31868b8";
+var __vue_module_identifier__$1 = "data-v-04666209";
 /* functional template */
 
-var __vue_is_functional_template__ = false;
+var __vue_is_functional_template__$1 = false;
 /* style inject shadow dom */
 
-var __vue_component__ = /*#__PURE__*/normalizeComponent({
-  render: __vue_render__,
-  staticRenderFns: __vue_staticRenderFns__
-}, __vue_inject_styles__, __vue_script__, __vue_scope_id__, __vue_is_functional_template__, __vue_module_identifier__, false, undefined, createInjectorSSR, undefined);//
+var __vue_component__$1 = /*#__PURE__*/normalizeComponent({
+  render: __vue_render__$1,
+  staticRenderFns: __vue_staticRenderFns__$1
+}, __vue_inject_styles__$1, __vue_script__$1, __vue_scope_id__$1, __vue_is_functional_template__$1, __vue_module_identifier__$1, false, undefined, createInjectorSSR, undefined);//
 //
 //
 //
@@ -451,7 +454,7 @@ var __vue_component__ = /*#__PURE__*/normalizeComponent({
 //
 //
 //
-var script$1 = {
+var script = {
   name: 'Pane',
   props: {
     initWidth: {
@@ -475,10 +478,10 @@ var script$1 = {
     this.height = this.initHeight;
   }
 };/* script */
-var __vue_script__$1 = script$1;
+var __vue_script__ = script;
 /* template */
 
-var __vue_render__$1 = function __vue_render__() {
+var __vue_render__ = function __vue_render__() {
   var _vm = this;
 
   var _h = _vm.$createElement;
@@ -492,16 +495,16 @@ var __vue_render__$1 = function __vue_render__() {
       width: _vm.width,
       height: _vm.height
     }
-  }, [_vm._ssrNode("<div data-resizer=\"data-resizer\" class=\"v-resizer\" data-v-b7f37b34>", "</div>", [_vm._t("resizer")], 2), _vm._ssrNode(" "), _vm._ssrNode("<div class=\"content\" data-v-b7f37b34>", "</div>", [_vm._ssrNode("<div class=\"innerContent\" data-v-b7f37b34>", "</div>", [_vm._t("content")], 2)])], 2);
+  }, [_vm._ssrNode("<div data-resizer=\"data-resizer\" class=\"v-resizer\" data-v-1c604b1c>", "</div>", [_vm._t("resizer")], 2), _vm._ssrNode(" "), _vm._ssrNode("<div class=\"content\" data-v-1c604b1c>", "</div>", [_vm._ssrNode("<div class=\"innerContent\" data-v-1c604b1c>", "</div>", [_vm._t("content")], 2)])], 2);
 };
 
-var __vue_staticRenderFns__$1 = [];
+var __vue_staticRenderFns__ = [];
 /* style */
 
-var __vue_inject_styles__$1 = function __vue_inject_styles__(inject) {
+var __vue_inject_styles__ = function __vue_inject_styles__(inject) {
   if (!inject) return;
-  inject("data-v-b7f37b34_0", {
-    source: "*[data-v-b7f37b34]{box-sizing:border-box}.v-pane[data-v-b7f37b34]{position:relative;display:flex}.v-pane.vertical[data-v-b7f37b34]{flex-direction:column}.v-pane .v-resizer[data-v-b7f37b34]{display:flex;align-items:center;justify-content:center;background-color:#616161}.v-pane.vertical>.v-resizer[data-v-b7f37b34]{width:100%;cursor:row-resize;background:linear-gradient(#9d9d9d,#9d9d9d) 50% calc(50% - 4px)/40px 3px no-repeat,linear-gradient(#9d9d9d,#9d9d9d) 50% calc(50% + 4px)/40px 3px no-repeat,#616161;border-top:1px solid #4a4c52;border-bottom:1px solid #202125}.v-pane.horizontal>.v-resizer[data-v-b7f37b34]{height:100%;cursor:col-resize;background:linear-gradient(#9d9d9d,#9d9d9d) calc(50% - 4px) 50%/3px 40px no-repeat,linear-gradient(#9d9d9d,#9d9d9d) calc(50% + 4px) 50%/3px 40px no-repeat,#616161;border-left:1px solid #4a4c52;border-right:1px solid #202125}.v-pane:first-of-type .v-resizer[data-v-b7f37b34]{cursor:auto;background:#616161}.v-pane.collapsed .v-resizer[data-v-b7f37b34]{background:repeating-linear-gradient(45deg,transparent,transparent 10px,rgba(0,0,0,.2) 10px,rgba(0,0,0,.2) 20px),#616161}.v-pane .content[data-v-b7f37b34]{flex:1;overflow:auto}",
+  inject("data-v-1c604b1c_0", {
+    source: "*[data-v-1c604b1c]{box-sizing:border-box}.v-pane[data-v-1c604b1c]{position:relative;display:flex}.v-pane.vertical[data-v-1c604b1c]{flex-direction:column}.v-pane .v-resizer[data-v-1c604b1c]{display:flex;align-items:center;justify-content:center;background-color:#616161}.v-pane.vertical>.v-resizer[data-v-1c604b1c]{width:100%;cursor:row-resize;background:linear-gradient(#9d9d9d,#9d9d9d) 50% calc(50% - 4px)/40px 3px no-repeat,linear-gradient(#9d9d9d,#9d9d9d) 50% calc(50% + 4px)/40px 3px no-repeat,#616161;border-top:1px solid #4a4c52;border-bottom:1px solid #202125}.v-pane.horizontal>.v-resizer[data-v-1c604b1c]{height:100%;cursor:col-resize;background:linear-gradient(#9d9d9d,#9d9d9d) calc(50% - 4px) 50%/3px 40px no-repeat,linear-gradient(#9d9d9d,#9d9d9d) calc(50% + 4px) 50%/3px 40px no-repeat,#616161;border-left:1px solid #4a4c52;border-right:1px solid #202125}.v-pane:first-of-type .v-resizer[data-v-1c604b1c]{cursor:auto;background:#616161}.v-pane.collapsed .v-resizer[data-v-1c604b1c]{background:repeating-linear-gradient(45deg,transparent,transparent 10px,rgba(0,0,0,.2) 10px,rgba(0,0,0,.2) 20px),#616161}.v-pane .content[data-v-1c604b1c]{flex:1;overflow:auto}",
     map: undefined,
     media: undefined
   });
@@ -509,19 +512,19 @@ var __vue_inject_styles__$1 = function __vue_inject_styles__(inject) {
 /* scoped */
 
 
-var __vue_scope_id__$1 = "data-v-b7f37b34";
+var __vue_scope_id__ = "data-v-1c604b1c";
 /* module identifier */
 
-var __vue_module_identifier__$1 = "data-v-b7f37b34";
+var __vue_module_identifier__ = "data-v-1c604b1c";
 /* functional template */
 
-var __vue_is_functional_template__$1 = false;
+var __vue_is_functional_template__ = false;
 /* style inject shadow dom */
 
-var __vue_component__$1 = /*#__PURE__*/normalizeComponent({
-  render: __vue_render__$1,
-  staticRenderFns: __vue_staticRenderFns__$1
-}, __vue_inject_styles__$1, __vue_script__$1, __vue_scope_id__$1, __vue_is_functional_template__$1, __vue_module_identifier__$1, false, undefined, createInjectorSSR, undefined);var components=/*#__PURE__*/Object.freeze({__proto__:null,MultiSplitPane: __vue_component__,Pane: __vue_component__$1});var install = function installVueMultiSplitPane(Vue) {
+var __vue_component__ = /*#__PURE__*/normalizeComponent({
+  render: __vue_render__,
+  staticRenderFns: __vue_staticRenderFns__
+}, __vue_inject_styles__, __vue_script__, __vue_scope_id__, __vue_is_functional_template__, __vue_module_identifier__, false, undefined, createInjectorSSR, undefined);var components=/*#__PURE__*/Object.freeze({__proto__:null,MultiSplitPane:__vue_component__$1,Pane:__vue_component__});var install = function installVueMultiSplitPane(Vue) {
   if (install.installed) return;
   install.installed = true;
   Object.entries(components).forEach(function (_ref) {
@@ -554,4 +557,4 @@ var plugin = {
     GlobalVue.use(plugin);
   }
 } // Default export is library as a whole, registered via Vue.use()
-exports.MultiSplitPane=__vue_component__;exports.Pane=__vue_component__$1;exports.default=plugin;
+exports.MultiSplitPane=__vue_component__$1;exports.Pane=__vue_component__;exports["default"]=plugin;

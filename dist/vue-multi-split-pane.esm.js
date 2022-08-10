@@ -8,7 +8,7 @@
 //
 //
 //
-var script = {
+var script$1 = {
   name: 'MultiSplitPane',
   props: {
     height: {
@@ -337,10 +337,10 @@ function addStyle(id, css) {
 }
 
 /* script */
-const __vue_script__ = script;
+const __vue_script__$1 = script$1;
 /* template */
 
-var __vue_render__ = function () {
+var __vue_render__$1 = function () {
   var _vm = this;
 
   var _h = _vm.$createElement;
@@ -363,13 +363,13 @@ var __vue_render__ = function () {
   }, [_vm._t("default")], 2);
 };
 
-var __vue_staticRenderFns__ = [];
+var __vue_staticRenderFns__$1 = [];
 /* style */
 
-const __vue_inject_styles__ = function (inject) {
+const __vue_inject_styles__$1 = function (inject) {
   if (!inject) return;
-  inject("data-v-d31868b8_0", {
-    source: "*[data-v-d31868b8]{box-sizing:border-box}[data-resizable][data-v-d31868b8]{overflow:auto;width:100%}",
+  inject("data-v-04666209_0", {
+    source: "*[data-v-04666209]{box-sizing:border-box}[data-resizable][data-v-04666209]{overflow:auto;width:100%}",
     map: undefined,
     media: undefined
   });
@@ -377,21 +377,21 @@ const __vue_inject_styles__ = function (inject) {
 /* scoped */
 
 
-const __vue_scope_id__ = "data-v-d31868b8";
+const __vue_scope_id__$1 = "data-v-04666209";
 /* module identifier */
 
-const __vue_module_identifier__ = undefined;
+const __vue_module_identifier__$1 = undefined;
 /* functional template */
 
-const __vue_is_functional_template__ = false;
+const __vue_is_functional_template__$1 = false;
 /* style inject SSR */
 
 /* style inject shadow dom */
 
-const __vue_component__ = /*#__PURE__*/normalizeComponent({
-  render: __vue_render__,
-  staticRenderFns: __vue_staticRenderFns__
-}, __vue_inject_styles__, __vue_script__, __vue_scope_id__, __vue_is_functional_template__, __vue_module_identifier__, false, createInjector, undefined, undefined);
+const __vue_component__$1 = /*#__PURE__*/normalizeComponent({
+  render: __vue_render__$1,
+  staticRenderFns: __vue_staticRenderFns__$1
+}, __vue_inject_styles__$1, __vue_script__$1, __vue_scope_id__$1, __vue_is_functional_template__$1, __vue_module_identifier__$1, false, createInjector, undefined, undefined);
 
 //
 //
@@ -410,7 +410,7 @@ const __vue_component__ = /*#__PURE__*/normalizeComponent({
 //
 //
 //
-var script$1 = {
+var script = {
   name: 'Pane',
   props: {
     initWidth: {
@@ -439,10 +439,10 @@ var script$1 = {
 };
 
 /* script */
-const __vue_script__$1 = script$1;
+const __vue_script__ = script;
 /* template */
 
-var __vue_render__$1 = function () {
+var __vue_render__ = function () {
   var _vm = this;
 
   var _h = _vm.$createElement;
@@ -468,13 +468,13 @@ var __vue_render__$1 = function () {
   }, [_vm._t("content")], 2)])]);
 };
 
-var __vue_staticRenderFns__$1 = [];
+var __vue_staticRenderFns__ = [];
 /* style */
 
-const __vue_inject_styles__$1 = function (inject) {
+const __vue_inject_styles__ = function (inject) {
   if (!inject) return;
-  inject("data-v-b7f37b34_0", {
-    source: "*[data-v-b7f37b34]{box-sizing:border-box}.v-pane[data-v-b7f37b34]{position:relative;display:flex}.v-pane.vertical[data-v-b7f37b34]{flex-direction:column}.v-pane .v-resizer[data-v-b7f37b34]{display:flex;align-items:center;justify-content:center;background-color:#616161}.v-pane.vertical>.v-resizer[data-v-b7f37b34]{width:100%;cursor:row-resize;background:linear-gradient(#9d9d9d,#9d9d9d) 50% calc(50% - 4px)/40px 3px no-repeat,linear-gradient(#9d9d9d,#9d9d9d) 50% calc(50% + 4px)/40px 3px no-repeat,#616161;border-top:1px solid #4a4c52;border-bottom:1px solid #202125}.v-pane.horizontal>.v-resizer[data-v-b7f37b34]{height:100%;cursor:col-resize;background:linear-gradient(#9d9d9d,#9d9d9d) calc(50% - 4px) 50%/3px 40px no-repeat,linear-gradient(#9d9d9d,#9d9d9d) calc(50% + 4px) 50%/3px 40px no-repeat,#616161;border-left:1px solid #4a4c52;border-right:1px solid #202125}.v-pane:first-of-type .v-resizer[data-v-b7f37b34]{cursor:auto;background:#616161}.v-pane.collapsed .v-resizer[data-v-b7f37b34]{background:repeating-linear-gradient(45deg,transparent,transparent 10px,rgba(0,0,0,.2) 10px,rgba(0,0,0,.2) 20px),#616161}.v-pane .content[data-v-b7f37b34]{flex:1;overflow:auto}",
+  inject("data-v-1c604b1c_0", {
+    source: "*[data-v-1c604b1c]{box-sizing:border-box}.v-pane[data-v-1c604b1c]{position:relative;display:flex}.v-pane.vertical[data-v-1c604b1c]{flex-direction:column}.v-pane .v-resizer[data-v-1c604b1c]{display:flex;align-items:center;justify-content:center;background-color:#616161}.v-pane.vertical>.v-resizer[data-v-1c604b1c]{width:100%;cursor:row-resize;background:linear-gradient(#9d9d9d,#9d9d9d) 50% calc(50% - 4px)/40px 3px no-repeat,linear-gradient(#9d9d9d,#9d9d9d) 50% calc(50% + 4px)/40px 3px no-repeat,#616161;border-top:1px solid #4a4c52;border-bottom:1px solid #202125}.v-pane.horizontal>.v-resizer[data-v-1c604b1c]{height:100%;cursor:col-resize;background:linear-gradient(#9d9d9d,#9d9d9d) calc(50% - 4px) 50%/3px 40px no-repeat,linear-gradient(#9d9d9d,#9d9d9d) calc(50% + 4px) 50%/3px 40px no-repeat,#616161;border-left:1px solid #4a4c52;border-right:1px solid #202125}.v-pane:first-of-type .v-resizer[data-v-1c604b1c]{cursor:auto;background:#616161}.v-pane.collapsed .v-resizer[data-v-1c604b1c]{background:repeating-linear-gradient(45deg,transparent,transparent 10px,rgba(0,0,0,.2) 10px,rgba(0,0,0,.2) 20px),#616161}.v-pane .content[data-v-1c604b1c]{flex:1;overflow:auto}",
     map: undefined,
     media: undefined
   });
@@ -482,26 +482,26 @@ const __vue_inject_styles__$1 = function (inject) {
 /* scoped */
 
 
-const __vue_scope_id__$1 = "data-v-b7f37b34";
+const __vue_scope_id__ = "data-v-1c604b1c";
 /* module identifier */
 
-const __vue_module_identifier__$1 = undefined;
+const __vue_module_identifier__ = undefined;
 /* functional template */
 
-const __vue_is_functional_template__$1 = false;
+const __vue_is_functional_template__ = false;
 /* style inject SSR */
 
 /* style inject shadow dom */
 
-const __vue_component__$1 = /*#__PURE__*/normalizeComponent({
-  render: __vue_render__$1,
-  staticRenderFns: __vue_staticRenderFns__$1
-}, __vue_inject_styles__$1, __vue_script__$1, __vue_scope_id__$1, __vue_is_functional_template__$1, __vue_module_identifier__$1, false, createInjector, undefined, undefined);
+const __vue_component__ = /*#__PURE__*/normalizeComponent({
+  render: __vue_render__,
+  staticRenderFns: __vue_staticRenderFns__
+}, __vue_inject_styles__, __vue_script__, __vue_scope_id__, __vue_is_functional_template__, __vue_module_identifier__, false, createInjector, undefined, undefined);
 
 var components = /*#__PURE__*/Object.freeze({
   __proto__: null,
-  MultiSplitPane: __vue_component__,
-  Pane: __vue_component__$1
+  MultiSplitPane: __vue_component__$1,
+  Pane: __vue_component__
 });
 
 // Import vue components
@@ -509,7 +509,8 @@ var components = /*#__PURE__*/Object.freeze({
 const install = function installVueMultiSplitPane(Vue) {
   if (install.installed) return;
   install.installed = true;
-  Object.entries(components).forEach(([componentName, component]) => {
+  Object.entries(components).forEach(_ref => {
+    let [componentName, component] = _ref;
     Vue.component(componentName, component);
   });
 }; // Create module definition for Vue.use()
@@ -519,5 +520,4 @@ const plugin = {
   install
 }; // To auto-install on non-es builds, when vue is found
 
-export default plugin;
-export { __vue_component__ as MultiSplitPane, __vue_component__$1 as Pane };
+export { __vue_component__$1 as MultiSplitPane, __vue_component__ as Pane, plugin as default };
